@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Computer Graphics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background-color: rgb(49, 49, 49);">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">CG</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sign1">Space Invaders</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sign2">Flappy Bird</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sign3">Physics Pong</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sign4">Planetary Gravitation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sign5">Collision Simulation</a>
+                  </li>
+                </ul>
+                <!-- <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success text-dark" type="submit">Search</button>
+                </form> -->
+              </div>
+            </div>
+          </nav>
+
+          <div class='mid'>
+            <video autoplay muted loop>
+                <source class="embed-responsive" src = "{{ url_for('static', filename='im.mp4') }}" type="video/mp4">
+            </video>
+            <div class="hero text-center">
+                <h2 class="text-light display-4 font-weight-bold ">Computer Graphics Games</h2>
+                <p class="text-light mx-auto">Fond of Retro-Style Games? If so have a Blast!</p>
+                <!-- <a class="text-dark" href="account.html">Get Started</a> -->
+            </div>
+
+          </div>
+    </header>
+
+<section style="align-items: center; background-color: rgb(49, 49, 49); color: crimson;">
+
+<section id = "sign1"></section>
+      <div class="row align-items-center container my-5 mx-auto ">
+        <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+            <h2>Space Invaders</h2>
+            <form action="SpaceInvaders" method="get">
+                <button class="btn btn-success" type="submit">Play the game</button>
+            </form>
+        </div>
+    </div>
+
+<section id = "sign2"></section>
+      <div class="row align-items-center container my-5 mx-auto">
+        <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5 ">
+          <h2>Flappy Bird</h2>
+          <form action="FlappyBird" method="get">
+            <button class="btn btn-success" type="submit">Play the game</button>
+        </form>
+        </div>
+     </div>
+
+<section id = "sign3"></section>
+      <div class="row align-items-center container my-5 mx-auto ">
+          <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+              <h2>Physics Pong</h2>
+              <form action="PhysicsPong" method="get">
+                <button class="btn btn-success" type="submit">Play the game</button>
+            </form>
+          </div>
+      </div>
+
+<section id = "sign4"></section>
+      <div class="row align-items-center container my-5 mx-auto " id = "sign4">
+        <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+            <h2>Planetary Gravitation</h2>
+            <form action="PlanetaryGravitation" method="get">
+              <button class="btn btn-success" type="submit">Run Simulation</button>
+          </form>
+        </div>
+    </div>
+
+<section id = "sign5"></section>
+    <div class="row align-items-center container my-5 mx-auto " id = "sign5">
+      <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+          <h2>Collision Simulation</h2>
+          <form action="CollisionSimulation" method="get">
+            <button class="btn btn-success" type="submit">Run Simulation</button>
+        </form>
+      </div>
+  </div>
+
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+</html>
